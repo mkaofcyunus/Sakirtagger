@@ -37,12 +37,12 @@ async def start(event):
   await event.reply("**ŞakirTagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/sakirtagger_bot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/etikettaggerbot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Kanal', 'https://t.me/Sakirbey2'),
-                         Button.url('👮Developer', 'https://t.me/tht_herlock'),
-                         Button.url('🎆 Sahib', 'https://t.me/SakirBey1')
+                         Button.url('📣 Kanal', 'https://t.me/etikettag'),
+                         Button.url('👮Developer', 'https://t.me/mkaofc'),
+                         Button.url('🎆 Sahib', 'https://t.me/mkaofc')
                       ]
                     ),
                     link_preview=False
@@ -53,12 +53,12 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       [
-                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/sakirtagger_bot?startgroup=a')
+                         Button.url('➕ BENİ GRUBA EKLE ➕', 'http://t.me/etikettaggerbot?startgroup=a')
                       ],
                       [
-                         Button.url('📣 Kanal', 'https://t.me/Sakirbey2'),
-                         Button.url('👮Developer', 'https://t.me/tht_herlock'),
-                         Button.url('🎆 Sahib', 'https://t.me/SakirBey1')
+                         Button.url('📣 Kanal', 'https://t.me/etikettag'),
+                         Button.url('👮Developer', 'https://t.me/mkaofc'),
+                         Button.url('🎆 Sahib', 'https://t.me/mkaofc')
                       ]
                     ),
                     link_preview=False
@@ -277,7 +277,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**[{usr.first_name}](tg://user?id={usr.id})**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @LuciBots**❌****")
+        await event.respond("**Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @mkaofc**❌****")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -295,7 +295,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{usr.first_name}](tg://user?id={usr.id})"
       if event.chat_id not in tekli_calisan:
-        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @LuciBots**❌**")
+        await event.respond("Işlem Başarıyla Durduruldu\n\n**Buda sizin reklamınız ola bilir @mkaofc**❌**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -303,5 +303,5 @@ async def mentionall(event):
         usrnum = 0
         usrtxt = ""
 
-print(">> Bot çalıyor merak etme 🚀 @tht_herlock bilgi alabilirsin <<")
+print(">> Bot çalıyor merak etme 🚀 @mkaofc bilgi alabilirsin <<")
 client.run_until_disconnected()
