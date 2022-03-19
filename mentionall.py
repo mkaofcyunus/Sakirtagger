@@ -34,7 +34,7 @@ async def cancel(event):
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**ŞakirTagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
+  await event.reply("**EtiketTagger🇹🇷**, Grup veya kanaldaki neredeyse tüm üyelerden bahsedebilirim ★\nDaha fazla bilgi için **/bilgi**'i tıklayın.",
                     buttons=(
                       [
                          Button.url('➕ BENİ GRUBA EKLE ➕ ', 'http://t.me/etikettaggerbot?startgroup=a')
@@ -49,7 +49,7 @@ async def start(event):
                    )
 @client.on(events.NewMessage(pattern="^/bilgi$"))
 async def help(event):
-  helptext = "**ŞakirTagger🇹🇷 Bot'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
+  helptext = "**EtiketTagger🇹🇷 Bot'un Yardım Menüsü**\n\nKomut: /utag \n  Bu komutu, başkalarına bahsetmek istediğiniz metinle birlikte kullanabilirsiniz. /etag  \n emoji ile etiketleme. \n`Örnek: /utag Günaydın!`  \nBu komutu yanıt olarak kullanabilirsiniz. herhangi bir mesaj Bot, yanıtlanan iletiye kullanıcıları etiketleyecek."
   await event.reply(helptext,
                     buttons=(
                       [
